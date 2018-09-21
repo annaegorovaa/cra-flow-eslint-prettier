@@ -2,12 +2,16 @@
 
 import React from 'react';
 
-function App() {
+type Props ={
+  siteName: string
+}
+
+function Header(props: Props) {
   return (
     <div className="App">
-     
+      {props.siteName}
     </div>
   );
 }
 
-export default App;
+export default Header;
